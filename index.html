@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
-    <title>Notes</title>
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+        <title>Notes</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-</html>
+    <body>
+        <div class="Container">
 
-<h1>NOTES</h1>
+            <h1>NOTES</h1>
 
-<section>
-    <h2>Add Notes</h2>
-    <input type="text" cols="40" rows="5" style="width: 200px; height: 50px" name="Text1" id="Text1" value="" placeholder="Insert your note here" />
-    <input type="submit" value="Add Note" />
-</section>
+            <section>
+                <h2>Add Notes</h2>
+                <input type="text" cols="40" rows="5" style="width: 200px; height: 50px" name="Text1" id="Text1" value="" placeholder="Insert your note here" />
+                <input type="submit" value="Add Note" />
+            </section>
 
-<section>
-    <h2>Your Notes</h2>
-    <div class="addedNote">Learning JS is fun but hard work.</div>
-    <input type="delete" value="Delete Note" />
-</section>
+            <section>
+                <h2>Your Notes</h2>
+                <div class="addedNote">Learning JS is fun but hard work.</div>
+                <input type="delete" value="Delete Note" />
+            </section>
+
+            <script src="./src/notes.js"></script>
+            <script src="./spec/notesSpec.js"></script>
+        </div>
+    </body>
+
+    </html>
