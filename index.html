@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
     <title>Notes</title>
+    <script src="https://kit.fontawesome.com/65db07c83e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -15,32 +16,33 @@
         <h1>NOTES</h1>
 
         <section class="noteSection">
-            <section class="noteColumn yourNotes id=" yourNotes ">
-                    <h2>Your Notes</h2>
-       
+            <section class="noteColumn yourNotes">
+                <h2>Your Notes</h2>
 
-            <section class="noteColumn addNotes ">
+                <section id="yourNotes"></section>
+            </section>
+
+
+            <section class="noteColumn">
                 <h2>Add Notes</h2>
 
-        </section>
+                <section class="addNotes">
+                    <card>
+                        <div class="noteTitle">
+                            <input maxlength="40" id="titleInput" type="text" placeholder="Add note title">
+                        </div>
+                        <textarea maxlength="240" id="contentInput" cols="30" rows="10" placeholder="write note here..."></textarea>
+                        <button><i class="fas fa-plus-square"></i></button>
+                    </card>
+                </section>
+
+            </section>
 
 
-        <script src="./src/notes.js "></script>
-        <script src="./src/inteface.js "></script>
-        <script src="./spec/notesSpec.js "></script>
-        </div>
-    </body>
+            <script src="./src/notes.js "></script>
+            <script src="./src/inteface.js "></script>
+            <script src="./spec/notesSpec.js "></script>
+    </div>
+</body>
 
-    </html>
-
-    <card>
-        <div class="noteTitle ">
-            <h3>insert Title here</h3>
-        </div>
-        <div class="add_note_ctnt ">
-            see the content
-        </div>
-        <div class="add_note_btn ">
-            <input type="delete " value="delete ">
-        </div>
-    </card>
+</html>
