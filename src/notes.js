@@ -1,18 +1,21 @@
 class Library {
     constructor() {
-        this.storageObj = [];
+        this.storageArr = [];
     }
 
     add(title, content) {
-        this.storageObj = JSON.parse(localStorage.getItem("My_Notes"));
-        this.storageObj.push({ title: title, content: content });
-        let storageJson = JSON.stringify(this.storageObj);
+        this.storageArr = JSON.parse(localStorage.getItem("My_Notes"));
+        if (this.storageArr == null) {
+            this.storageArr = [];
+        }
+        this.storageArr.push({ title: title, content: content });
+        let storageJson = JSON.stringify(this.storageArr);
         localStorage.setItem("My_Notes", storageJson);
     }
 
     view() {
-        this.storageObj = JSON.parse(localStorage.getItem("My_Notes"));
-        return this.storageObj;
+        this.storageArr = JSON.parse(localStorage.getItem("My_Notes"));
+        return this.storageArr;
     }
 }
 
