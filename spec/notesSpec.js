@@ -35,6 +35,10 @@ it("should pass this test", () => {
     expect(2 + 2).toEqual(4);
 });
 
+it("should include e ", () => {
+    expect("hello").toInclude("e");
+});
+
 it("adds to local storage", () => {
     let lib = new Library();
     lib.add("Record Store Day", "Koko.it");
